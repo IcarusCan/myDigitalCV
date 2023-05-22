@@ -1,0 +1,218 @@
+body {
+  margin: 0px;
+}
+
+.cv-document {
+  box-sizing: border-box;
+  border: none;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: arial, tahoma, sans-serif;
+  font-size: 11pt;
+}
+
+.cv-page {
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  width: 900px;
+  min-height: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  position: relative;
+  padding: 40px;
+}
+
+/* GENERAL */
+.section {
+  margin: 40px 0px;
+}
+
+.section-title {
+  font-size: 17.5px;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+
+/* INFORMATION SECTION CSS */
+#info.section {
+  margin-top: 0px;
+}
+
+#info .section-content {
+  /* Use section-content as base for avatar */
+  position: relative;
+}
+
+.cv-avatar {
+  position: absolute;
+  margin: 4px;
+  right: 0;
+}
+
+h1 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 32px;
+  color: #0e2452;
+}
+
+.cv-info,
+.cv-avatar,
+.cv-info p {
+  display: inline-block;
+}
+
+.cv-info div p:first-child {
+  /* Select the 1st <p> element 
+  that is child of div in cv-info */
+  width: 82px;
+  margin-right: 32px;
+  font-weight: bold;
+}
+
+.cv-info p {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+/* OBJECTIVE SECTION CSS */
+#target .section-title {
+  margin: 25px 0;
+}
+
+#target .section-content {
+  text-align: justify;
+}
+
+/*INCLUDE CSS FOR:
+  - EDUCATION SECTION
+  - EXPERIENCE SECTION
+  - ACTIVITY SECTION
+*/
+.background {
+  border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+  margin-top: 6px;
+}
+
+.background-time,
+.background-detail {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.background-time {
+  width: 250px;
+  float: left;
+  margin-top: 0px;
+}
+
+.background-detail p:first-child {
+  font-weight: bold;
+}
+
+.background-detail p {
+  margin-top: 0px;
+  margin-bottom: 6px;
+}
+
+/* SKILL & CERTIFICATE SECTION CSS */
+#skill .section-content,
+#certificate .section-content {
+  margin-top: -10px;
+}
+
+#skill .section-content div,
+#certificate .section-content div {
+  border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+}
+
+#skill div p,
+#certificate div p {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#certificate div p {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+#skill div p:first-child,
+#certificate div p:first-child {
+  /* Choose the 1st <p> child to bold */
+  width: 250px;
+  margin-right: 25px;
+  font-weight: bold;
+}
+
+#certificate div p:first-child {
+  font-weight: normal;
+}
+
+#certificate div p:nth-child(2) {
+  /* UPPERCASE the 2nd <p> */
+  text-transform: uppercase;
+}
+
+/* HOBBY SECTION CSS */
+#hobby .section-title {
+  margin-bottom: 4px;
+}
+
+#hobby ul {
+  padding-left: 18px;
+  margin: 0px;
+}
+
+#hobby li {
+  padding: 2px 0px;
+}
+
+/* PROJECT SECTION CSS */
+.project-title {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.project-year {
+  margin: 2px 0px;
+}
+
+.project-details ul {
+  padding-left: 18px;
+  margin: 10px 0px;
+}
+
+.project-details li span {
+  font-weight: bold;
+}
+
+/* CONTACT SECTION CSS */
+#contact ol {
+  padding-left: 18px;
+  margin: 0px;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+}
+
+#contact li {
+  margin: 6px 0px;
+}
+
+li a {
+  text-decoration: none;
+}
