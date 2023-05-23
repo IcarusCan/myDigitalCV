@@ -66,6 +66,7 @@ h1 {
   margin-top: 5px;
   margin-bottom: 0px;
   font-size: 32px;
+  text-transform: uppercase;
   color: #0e2452;
 }
 
@@ -73,6 +74,10 @@ h1 {
 .cv-avatar,
 .cv-info p {
   display: inline-block;
+}
+
+.cv-info {
+  margin-left: 3px;
 }
 
 .cv-info div p:first-child {
@@ -103,20 +108,61 @@ h1 {
   - ACTIVITY SECTION
 */
 .background {
-  border-bottom: 1px solid rgba(200, 200, 200, 0.5);
   margin-top: 6px;
+  /* Make base to draw bottom border and timeline*/
+  position: relative;
+}
+
+.background::after {
+  content: "";
+  position: absolute;
+  /* Draw bottom border */
+  border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+  left: 20px;
+  bottom: 0px;
+  width: 880px;
 }
 
 .background-time,
 .background-detail {
   display: inline-block;
-  margin-right: 25px;
 }
 
 .background-time {
-  width: 250px;
+  /* Position to the left corner */
   float: left;
-  margin-top: 0px;
+  width: 250px;
+  /* Padding left to adjust the distance 
+  from the line to the content*/
+  padding-left: 20px;
+  margin: 0px;
+}
+
+/* Draw the timeline */
+.background-time::before {
+  /* Use ::before pseudo element to draw the line
+  then adjust the position */
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Adjust the position */
+  position: absolute;
+  bottom: 0px;
+  top: -6px;
+  left: 7px;
+  width: 1px;
+}
+
+/* Draw the circle milestone */
+.background-time::after {
+  content: "";
+  background-color: rgba(0, 0, 0);
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  /* Draw circle */
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
 }
 
 .background-detail p:first-child {
